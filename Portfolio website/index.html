@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowledgeNest</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="Images/logo-black.svg" type="image/x-icon">
+  </head>
+  <body class="day-mode">
+    <header>
+      <div class="logo">
+        <img src="Images/logo-no-background.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <label class="mode-toggle">
+          <input type="checkbox" id="mode-toggle" />
+          <span class="toggle-icon"></span>
+        </label>
+      </nav>
+      <script>
+        const modeToggle = document.getElementById("mode-toggle");
+        const body = document.body;
+
+        modeToggle.addEventListener("change", () => {
+          if (modeToggle.checked) {
+            body.classList.add("night-mode");
+            body.classList.remove("day-mode");
+          } else {
+            body.classList.add("day-mode");
+            body.classList.remove("night-mode");
+          }
+        });
+      </script>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="home-content">
+              <h1 class="heading-1">
+                Transforming Ideas into Insights for a Brighter Tomorrow
+              </h1>
+              <p class="intro-text">
+                Welcome to my portfolio! I am a passionate creator dedicated to
+                transforming ideas into impactful solutions with focus on
+                innovation and knowledge.
+              </p>
+            </div>
+            <div class="profile-image">
+              <img
+                src="Images/profile-p.jpeg"
+                alt="Profile Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/login/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://github.com/Chibi420" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/accounts/login/?hl=en"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/pushpam-gurav-75673b30b/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/103l3qq0z0_9CyAAB8HsSd5IBa_qQHgqT/view?usp=drive_link"
+              target="_blank"
+              class="download-resume"
+              >Download CV</a
+            >
+          </div>
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- About section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="heading">About Me</h2>
+          </div>
+          <div class="col-md-6">
+            <div class="about-image">
+              <img
+                src="Images/aboutsec-img.jpg"
+                width="300"
+                height="300"
+                alt="About Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-content">
+              <p>
+                I'm Pushpam Gurav, a fresh and enthusiastic individual with a
+                passion for web development. As a beginner in the industry, I'm
+                excited to showcase my skills and projects on this platform.
+              </p>
+              <p class="read-more-content" style="display: none">
+                With a strong foundation in computer science, I've developed a
+                keen interest in web development. I'm constantly learning and
+                exploring new technologies to stay updated with the latest
+                trends. My goal is to create innovative and user-friendly web
+                applications that make a differences.
+              </p>
+
+              <button class="read-more-btn">Read More</button>
+            </div>
+          </div>
+          <script>
+            const readMoreBtn = document.querySelector(".read-more-btn");
+            const readMoreContent =
+              document.querySelector(".read-more-content");
+
+            readMoreBtn.addEventListener("click", () => {
+              readMoreContent.style.display =
+                readMoreContent.style.display === "block" ? "none" : "block";
+              readMoreBtn.textContent =
+                readMoreContent.style.display === "block"
+                  ? "Read Less"
+                  : "Read More";
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="skill-container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="heading">Skills</h2>
+          </div>
+          <div class="col-md-6">
+            <h3 class="subheading">Technical Skills</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <p>HTML/CSS</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 80%"></div>
+                </div>
+                <span>80%</span>
+              </div>
+              <div class="skill-item">
+                <p>Javascript</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 70%"></div>
+                </div>
+                <span>70%</span>
+              </div>
+              <div class="skill-item">
+                <p>Reactjs</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 60%"></div>
+                </div>
+                <span>60%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="subheading">Soft Skills</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <p>Time Management</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 85%"></div>
+                </div>
+                <span>85%</span>
+              </div>
+              <div class="skill-item">
+                <p>Critical Thinking</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 80%"></div>
+                </div>
+                <span>80%</span>
+              </div>
+              <div class="skill-item">
+                <p>Teamwork</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 95%"></div>
+                </div>
+                <span>95%</span>
+              </div>
+              <div class="skill-item">
+                <p>Problem Solving</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 90%"></div>
+                </div>
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+      <div class="certification-container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="heading">Services</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="certification-card">
+              <h3 class="certification-title">
+                Full Stack Development Certification
+              </h3>
+              <p class="certification-details">
+                Issued by Internshala, this certification demonstrates my skills
+                in full stack development using HTML, CSS, JavaScript, and
+                React.
+              </p>
+              <a
+                href="https://trainings.internshala.com/full-stack-web-development-placement-guarantee-course/?tracking_source=trainings-dropdown-placement-guarantee-courses"
+                target="_blank"
+                ><button class="certification-btn">View Certificate</button></a
+              >
+            </div>
+            <div class="certification-card">
+              <h3 class="certification-title">UI/UX Design</h3>
+              <p class="certification-details">
+                Issued by Internshala, this certification demonstrates my skills
+                in responsive web design tools like Sktech, Figma, and Adobe XD.
+              </p>
+              <a
+                href="https://trainings.internshala.com/ui-ux-placement-guarantee-course/?tracking_source=trainings-dropdown-placement-guarantee-courses"
+                target="_blank"
+                ><button class="certification-btn">View Certificate</button></a
+              >
+            </div>
+            <div class="certification-card">
+              <h3 class="certification-title">Data Science</h3>
+              <p class="certification-details">
+                Issued by Internshala, this certification demonstrates my skills
+                in data analysis, machine learning, and visualization tools like
+                Python, NumPy, Pandas, and Tableau..
+              </p>
+              <a
+                href="https://trainings.internshala.com/data-science-placement-guarantee-course/?tracking_source=trainings-dropdown-placement-guarantee-courses"
+                target="_blank"
+                ><button class="certification-btn">View Certificate</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Project Section -->
+    <section class="projects" id="projects">
+      <div class="project-container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="heading">Projects</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="project-grid">
+              <!-- Project Card 1 -->
+              <div class="project-card">
+                <img
+                  src="Images/online-shop.png"
+                  alt="Project 1"
+                  class="project-image"
+                  width="50"
+                  height="50"
+                />
+                <h3 class="project-title">Project 1: E-commerce Website</h3>
+                <p class="project-description">
+                  A responsive e-commerce website built using HTML, CSS, and
+                  JavaScript.
+                </p>
+                <a href="#" target="_blank"
+                  ><button class="project-btn">View Project</button></a
+                >
+              </div>
+              <!-- Project Card 2 -->
+              <div class="project-card">
+                <img
+                  src="Images/weather.png"
+                  alt="Project 2"
+                  class="project-image"
+                  width="50"
+                  height="50"
+                />
+                <h3 class="project-title">Project 2: Weather App</h3>
+                <p class="project-description">
+                  A weather app built using React and APIs.
+                </p>
+                <a href="#" target="_blank"
+                  ><button class="project-btn">View Project</button></a
+                >
+              </div>
+              <!-- Project Card 3 -->
+              <div class="project-card">
+                <img
+                  src="Images/portfolio.png"
+                  alt="Project 3"
+                  class="project-image"
+                  width="50"
+                  height="50"
+                />
+                <h3 class="project-title">Project 3: Portfolio Website</h3>
+                <p class="project-description">
+                  A responsive portfolio website built using HTML, CSS, and
+                  JavaScript.
+                </p>
+                <a href="#" target="_blank"
+                  ><button class="project-btn">View Project</button></a
+                >
+              </div>
+              <!-- Project Card 4 -->
+              <div class="project-card">
+                <img
+                  src="Images/chatbot.png"
+                  alt="Project 4"
+                  class="project-image"
+                  width="50"
+                  height="50"
+                />
+                <h3 class="project-title">Project 4: Chatbot</h3>
+                <p class="project-description">
+                  A chatbot built using Node.js and Dialogflow.
+                </p>
+                <a href="#" target="_blank"
+                  ><button class="project-btn">View Project</button></a
+                >
+              </div>
+              <!-- Project Card 5 -->
+              <div class="project-card">
+                <img
+                  src="Images/productivity.png"
+                  alt="Project 5"
+                  class="project-image"
+                  width="50"
+                  height="50"
+                />
+                <h3 class="project-title">Project 5: To-Do List App</h3>
+                <p class="project-description">
+                  A to-do list app built using React and Redux.
+                </p>
+                <a href="#" target="_blank"
+                  ><button class="project-btn">View Project</button></a
+                >
+              </div>
+              <!-- Project Card 6 -->
+              <div class="project-card">
+                <img
+                  src="Images/browser.png"
+                  alt="Project 6"
+                  class="project-image"
+                  width="50"
+                  height="50"
+                />
+                <h3 class="project-title">Project 6: Landing Page</h3>
+                <p class="project-description">
+                  A responsive landing page built using HTML, CSS, and
+                  JavaScript.
+                </p>
+                <a href="#" target="_blank"
+                  ><button class="project-btn">View Project</button></a
+                >
+              </div>
+              <!-- Project Card 7 -->
+              <div class="project-card">
+                <img
+                  src="Images/blog.png"
+                  alt="Project 7"
+                  class="project-image"
+                  width="50"
+                  height="50"
+                />
+                <h3 class="project-title">Project 7: Blog Website</h3>
+                <p class="project-description">
+                  A responsive blog website built using WordPress.
+                </p>
+                <a href="#" target="_blank"
+                  ><button class="project-btn">View Project</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="heading">Get in Touch</h2>
+          </div>
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <p>&copy; 2024 Pushpam Gurav. All rights reserved.</p>
+        </div>
+        <div class="footer-contacts">
+          <button class="call-button">
+            <i class="fas fa-mobile"></i> Call Us
+          </button>
+          <button class="email-button">
+            <i class="fas fa-envelope"></i> Email Us
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
